@@ -76,9 +76,6 @@ A pasta `/assets/img` contém:
 - **Gustavo Keiji Okada** – RM563428  
   [GitHub](https://github.com/Gdev3356) | [LinkedIn](https://www.linkedin.com/in/gustavo-okada-53a3b8359)
 
-- **Lucas Tavares Dagrosa** – RM563424  
-  [GitHub](https://github.com/lucastdag) | [LinkedIn](https://www.linkedin.com/in/lucastdagrosa)
-
 ---
 
 ## 🔗 Repositório do Projeto
