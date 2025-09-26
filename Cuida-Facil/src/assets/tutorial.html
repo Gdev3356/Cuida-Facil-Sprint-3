@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuida Fácil - HC FMUSP - Ajuda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/logotipo.png" type="image/png">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="Logo CuidaFácil" class="logo">
+    <nav>
+        <a href="../index.html">Início</a>
+        <a class="active" href="tutorial.html">Ajuda</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="integrantes.html">Integrantes</a>
+    </nav>
+</header>
+<main>
+    <h1>Escolha o que você deseja ajuda</h1>
+    <div class="center-button">
+        <button class="button" onclick="mostrarSecao('consultas')">Consultas</button>
+        <button class="button" onclick="mostrarSecao('exames')">Exames</button>
+    </div>
+
+    <section id="consultas" style="display:none;">
+        <h2>Ajuda com Consultas</h2>
+        <ul>
+            <li>Para <strong>marcar uma consulta</strong>, vá até “Minhas Consultas” e clique em “Nova Consulta”.</li>
+            <li>Para <strong>reagendar</strong>, selecione a consulta e clique em “Alterar”.</li>
+            <li>Para <strong>cancelar</strong>, clique em “Cancelar” na consulta desejada.</li>
+        </ul>
+    </section>
+
+    <section id="exames" style="display:none;">
+        <h2>Ajuda com Exames</h2>
+        <ul>
+            <li>Para <strong>consultar exames</strong>, vá em “Meus Exames” e clique no exame desejado.</li>
+            <li>Para <strong>marcar um exame</strong>, clique em “Agendar Exame”.</li>
+            <li>Para <strong>reagendar ou cancelar</strong>, selecione o exame e clique na opção desejada.</li>
+        </ul>
+    </section>
+</main>
+<footer>© 2025 CuidaFácil | Feito com empatia para você.</footer>
+</body>
+</html>

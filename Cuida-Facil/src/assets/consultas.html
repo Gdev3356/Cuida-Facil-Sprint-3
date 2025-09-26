@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuida Fácil - HC FMUSP - Marcar Consulta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/logotipo.png" type="image/png">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="voltar">Voltar</a>
+    </header>
+    <div class="container" id="formulario">
+        <h2 class="form-title">Marcar Consulta</h2>
+        <input type="date" id="data-consulta" class="input-field">
+        
+        <select id="especialidade" class="input-field">
+            <option value="">Selecione uma especialidade</option>
+            <option value="Cardiologia">Cardiologia</option>
+            <option value="Ortopedia">Ortopedia</option>
+            <option value="Pediatria">Pediatria</option>
+        </select>
+
+        <select id="unidade" class="input-field">
+            <option value="">Selecione uma unidade</option>
+            <option value="HC Central">HC Central</option>
+            <option value="HC Pinheiros">HC Pinheiros</option>
+            <option value="IRMEA Vila Mariana">IMREA Vila Mariana</option>
+        </select>
+
+    <input type="time" id="horario-consulta" class="input-field">
+
+        <div class="buttons">
+            <button onclick="cancelarConsulta()">Cancelar</button>
+            <button onclick="confirmarConsulta()">Confirmar</button>
+        </div>
+    </div>
+
+    <div class="container" id="mensagem-confirmacao">
+        <h2 class="form-title">Consulta Marcada</h2>
+        <p id="texto-confirmacao"></p>
+        <div class="buttons">
+            <button onclick="voltarFormulario()">Confirmar</button>
+        </div>
+    </div>
+    <footer>
+        <a href="./tutorial.html">Ajuda</a>
+        <a href="./faq.html">FAQ</a>
+        <small><br>&copy; 2025 CuidaFácil | Feito com empatia para você.</small>
+        <a href="./integrantes.html">Integrantes</a>
+        <a href="./contato.html">Contato</a>      
+    </footer>
+</body>
+</html>
