@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom';
+
 export default function Rodape() {
     return (
         <footer className="footer">
             <div className="footer-links">
-                <button className="footer-link">Ajuda</button>
-                <button className="footer-link">FAQ</button>
-                <button className="footer-link">Integrantes</button>
-                <button className="footer-link">Contato</button>
+                <Link to="/ajuda" className="footer-link">Ajuda</Link>
+                <Link to="/faq" className="footer-link">FAQ</Link>
+                <Link to="/integrantes" className="footer-link">Integrantes</Link>
+                <Link to="/contato" className="footer-link">Contato</Link>
+                <p className="footer-copyright">
+                    &copy; 2025 CuidaFácil | Feito com empatia para você.
+                </p>
             </div>
-            <p className="footer-copyright">
-                &copy; 2025 CuidaFácil | Feito com empatia para você.
-            </p>
         </footer>
     );
 }

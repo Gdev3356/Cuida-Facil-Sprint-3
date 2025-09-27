@@ -4,11 +4,9 @@ import Rodape from "./components/Rodape/Rodape";
 
 export default function App(){
   return(
-    <div className="container">
+    <div className="body">
       <Cabecalho/>
-      <main>
-        <Outlet/>
-      </main>
+      <Outlet/>
       <Rodape/>
     </div>
   );

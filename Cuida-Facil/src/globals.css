@@ -16,19 +16,135 @@
     --card-bg-opacity: 0.75;
 }
 
-/* Base Styles */
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
+    /* Estilos do body de style.css convertidos para Tailwind */
+    @apply m-0 font-sans text-text-dark text-center;
     background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
-    color: var(--text-dark);
-    text-align: center;
-    box-sizing: border-box; /* Crucial for consistent box model */
-    overflow-x: hidden; /* Prevents horizontal scroll */
-    min-height: 100vh; /* Permite que o body cresça se o conteúdo for maior que a tela */
+}
+
+h1{
+    /* Estilos do h1 de style.css convertidos para Tailwind - Ajuste de margens */
+    @apply mt-24 ml-72; /* Ajustei os valores originais para serem mais flexíveis com as classes do Tailwind */
+}
+
+header {
+    /* Estilos do header de style.css convertidos para Tailwind */
+    @apply p-5 relative text-center;
+}
+
+
+.voltar {
+    /* Estilos do .voltar de style.css convertidos para Tailwind */
+    @apply absolute text-lg right-5 top-5 bg-transparent border-none font-bold cursor-pointer no-underline text-inherit;
+}
+
+.nao-possui-conta {
+    /* Estilos do .nao-possui-conta de style.css convertidos para Tailwind */
+    @apply text-sm bg-transparent border-none cursor-pointer p-0;
+    color: var(--text-dark); /* Mantém a cor original */
+}
+
+@layer{
+    
+    .body{
+        font: 1em Arial, sans-serif;
+        & .logo {
+            @apply w-[380px] h-[180px] mb-4;
+        }
+    }
+    
+    
+    .cards{
+        @apply grid grid-cols-1 md:grid-cols-3 gap-6 p-6;
+
+        & .card{
+            @apply rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 text-left cursor-pointer min-h-[200px] flex items-end;
+
+            &:hover{
+                @apply transform -translate-y-1 scale-105;
+            }
+
+            & .card-content{
+                @apply bg-black bg-opacity-50 text-white p-4 rounded w-full;
+
+                & h2{
+                    @apply text-xl font-semibold mb-2;
+                }
+
+                & p{
+                    @apply text-sm opacity-90;
+                }
+            }
+        }
+    }
+
+    /* Adicionado o seletor da classe `footer` de Rodape.tsx e style.css */
+    .footer {
+        @apply w-full bg-gradient-to-r from-header-footer-gradient-start to-header-footer-gradient-end text-text-dark p-6 flex flex-col sm:flex-row justify-center items-center gap-4 text-sm mt-auto;
+    }
+    
+    .footer-links {
+        @apply flex gap-4; /* Para alinhar os botões do footer */
+    }
+
+    .footer-link {
+        @apply bg-transparent border-none text-text-dark font-medium cursor-pointer transition-colors duration-200 hover:text-dark-blue;
+    }
+
+    .footer-copyright {
+        @apply text-text-medium text-xs sm:text-sm;
+    }
+
+    /* Outras classes do style.css que podem ser usadas em outros componentes */
+    .input-field {
+        @apply text-base min-h-[45px];
+    }
+    
+
+    .buttons {
+        @apply flex flex-col gap-2 items-stretch; /* Para botões em dispositivos móveis */
+    }
+    
+    .button, button:not(.footer-link) { /* Aplica-se ao seu botão e a outros botões que não são links no footer */
+        @apply text-base py-3 px-5 rounded-lg bg-primary-blue text-white font-bold cursor-pointer transition-colors duration-200 hover:bg-dark-blue;
+    }
+}
+
+/* Regras de media query de style.css e globals.css mescladas */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  /* No Tailwind, as classes `sm:` handle a maioria desses estilos. */
+  .card, .card-especialidades-medicas {
+    @apply w-[300px];
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* No Tailwind, as classes `md:` handle a maioria desses estilos. */
+  .card, .card-especialidades-medicas {
+    @apply w-[320px];
+  }
+
+  .buttons {
+    @apply flex-row gap-4 items-center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cards, .cards-especialidades-medicas {
+        @apply justify-center flex-row;
+    }
+    
+    body .logo {
+        @apply w-[390px] h-[180px] mb-2 block mx-auto;
+    }
+
+    .button, button:not(.buttons button, .notificacao button) {
+        @apply py-4 px-7;
+    }
 }
 
 main {
@@ -149,17 +265,6 @@ nav a.active {
     color: inherit;
 }
 
-/* Cards (Base para todos os tipos de cards) */
-.cards, .cards-especialidades-medicas { /* Aplicado a ambos os contêineres de cards */
-    display: flex;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 20px;
-    flex-wrap: wrap; /* Permite que os cards quebrem linha */
-    padding: 20px;
-    width: 100%; /* Ensure container takes full width */
-    max-width: 1000px; /* Limit overall width on larger screens */
-    margin: 0 auto; /* Center the card group */
-}
 
 .card, .card-especialidades-medicas { /* Estilos comuns para todos os cards */
     display: flex; /* Make card a flex container */
