@@ -8,12 +8,14 @@ import Home from './routes/Home/index.tsx';
 import Especialidades from './routes/Especialidades/index.tsx';
 import Error from './routes/Error/index.tsx';
 import Unidades from './routes/Unidades/index.tsx';
+import Consulta from './routes/Consulta/index.tsx';
 
 const router = createBrowserRouter([
   {path:"/",element:<App/>,errorElement:<Error/>,children:[
     {path:"/",element:<Home/>},
     {path:"/especialidades",element:<Especialidades/>},
-     {path:"/unidades",element:<Unidades/>},
+    {path:"/unidades",element:<Unidades/>},
+    {path:"/consulta",element:<Consulta/>},
   ]}
 ]);
 
