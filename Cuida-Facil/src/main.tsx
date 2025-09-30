@@ -9,6 +9,7 @@ import Especialidades from './routes/Especialidades/index.tsx';
 import Error from './routes/Error/index.tsx';
 import Unidades from './routes/Unidades/index.tsx';
 import Consulta from './routes/Consulta/index.tsx';
+import Integrantes from './routes/Integrantes/index.tsx';
 
 const router = createBrowserRouter([
   {path:"/",element:<App/>,errorElement:<Error/>,children:[
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     {path:"/especialidades",element:<Especialidades/>},
     {path:"/unidades",element:<Unidades/>},
     {path:"/consulta",element:<Consulta/>},
+    {path:"/integrantes",element:<Integrantes/>},
   ]}
 ]);
 
