@@ -8,9 +8,11 @@ export default function Rodape() {
                 <Link to="/faq" className="footer-link">FAQ</Link>
                 <Link to="/integrantes" className="footer-link">Integrantes</Link>
                 <Link to="/contato" className="footer-link">Contato</Link>
-                <p className="footer-copyright">
+                <div className='footer-small'>
+                 <p className="footer-copyright">
                     &copy; 2025 CuidaFácil | Feito com empatia para você.
                 </p>
+                </div>
             </div>
         </footer>
     );

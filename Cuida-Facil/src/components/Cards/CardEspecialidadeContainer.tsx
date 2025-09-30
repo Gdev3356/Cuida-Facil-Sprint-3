@@ -22,13 +22,12 @@ const cardsData: TipoCardEspecialidade[] = [
     }
 ];
 
-// Componente container
 export default function CardsEspecialidadesContainer() {
     return (
-        <>
+        <main className="cards-especialidades-medicas">
             {cardsData.map((card) => (
                 <CardEspecialidade key={card.id} card={card} />
             ))}
-        </>
+        </main>
     );
 }

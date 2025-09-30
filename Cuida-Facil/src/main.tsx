@@ -10,6 +10,9 @@ import Error from './routes/Error/index.tsx';
 import Unidades from './routes/Unidades/index.tsx';
 import Consulta from './routes/Consulta/index.tsx';
 import Integrantes from './routes/Integrantes/index.tsx';
+import FaqPage from './routes/Faq/index.tsx';
+import AjudaPage from './routes/Ajuda/index.tsx';
+import ContactPage from './routes/Contanto/index.tsx';
 
 const router = createBrowserRouter([
   {path:"/",element:<App/>,errorElement:<Error/>,children:[
@@ -18,6 +21,9 @@ const router = createBrowserRouter([
     {path:"/unidades",element:<Unidades/>},
     {path:"/consulta",element:<Consulta/>},
     {path:"/integrantes",element:<Integrantes/>},
+    {path:"/faq",element:<FaqPage/>},
+    {path:"/ajuda",element:<AjudaPage/>},
+    {path:"/contato",element:<ContactPage/>}
   ]}
 ]);
 

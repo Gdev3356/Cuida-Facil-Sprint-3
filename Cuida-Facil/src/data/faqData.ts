@@ -11,26 +11,26 @@ export const faqData: TipoFaqItem[] = [
     },
     {
         pergunta: "Quem pode fazer o cadastro?",
-        resposta: "Qualquer pessoa que tenha realizado exames, consultas ou outro tipo de atendimento no complexo HC pode criar uma conta."
+        resposta: "<strong>R:</strong> Qualquer pessoa que tenha realizado exames, consultas ou outro tipo de atendimento no complexo HC pode criar uma conta."
     },
     {
         pergunta: "Não consigo concluir meu cadastro, o que faço?",
-        resposta: "A criação de um cadastro no portal do paciente compara os dados informados no portal com os dados registrados na base de dados do HC. Caso tenha atualizado alguma informação dos seus dados após sua última passagem pelo hospital, é provável que este seja o motivo de sua dificuldade em finalizar o cadastro. Neste caso, você deve regularizar seu cadastro comparecendo no Serviço de Registro ou Matrícula no Instituto em que realizou a consulta ou exame, com seu documento de identificação (RG ou CNH) e comprovante de endereço atualizado."
+        resposta: "<strong>R:</strong> A criação de um cadastro no portal do paciente compara os dados informados no portal com os dados registrados na base de dados do HC. Caso tenha atualizado alguma informação dos seus dados após sua última passagem pelo hospital, é provável que este seja o motivo de sua dificuldade em finalizar o cadastro. Neste caso, você deve regularizar seu cadastro comparecendo no Serviço de Registro ou Matrícula no Instituto em que realizou a consulta ou exame, com seu documento de identificação (RG ou CNH) e comprovante de endereço atualizado."
     },
     {
         pergunta: "Os dados do meu cadastro estão desatualizados, como faço?",
-        resposta: "Você pode atualizar seus dados de contato, tais como email e telefone diretamente através do portal na opção Meus Dados. Outras informações devem ser atualizadas comparecendo no Serviço de Registro ou Matrícula no Instituto em que realizou a consulta ou exame, com seu documento de identificação (RG ou CNH) e comprovante de endereço atualizado."
+        resposta: "<strong>R:</strong> Você pode atualizar seus dados de contato, tais como email e telefone diretamente através do portal na opção Meus Dados. Outras informações devem ser atualizadas comparecendo no Serviço de Registro ou Matrícula no Instituto em que realizou a consulta ou exame, com seu documento de identificação (RG ou CNH) e comprovante de endereço atualizado."
     },
     {
         pergunta: "Posso compartilhar minha senha com outras pessoas?",
-        resposta: "Não é indicado o compartilhamento da sua senha com outras pessoas. Elas terão acesso aos seus resultados de exames e outras informações disponíveis no portal que podem ser confidenciais."
+        resposta: "<strong>R:</strong> Não é indicado o compartilhamento da sua senha com outras pessoas. Elas terão acesso aos seus resultados de exames e outras informações disponíveis no portal que podem ser confidenciais."
     },
     {
         pergunta: "Fiz exames e eles não aparecem, o que devo fazer?",
-        resposta: "É possível que você tenha mais de um cadastro ativo no Hospital das Clínicas. Para unificar os registros você deve entrar em contato com a área de matrícula (DAM) do seu instituto de origem ou no local onde fez o último exame."
+        resposta: "<strong>R:</strong> É possível que você tenha mais de um cadastro ativo no Hospital das Clínicas. Para unificar os registros você deve entrar em contato com a área de matrícula (DAM) do seu instituto de origem ou no local onde fez o último exame."
     },
     {
         pergunta: "Tendo problemas com o Portal do Paciente HC?",
-        resposta: "Envie um email com a descrição do problema, nome completo, RGHC, CPF e último instituto em que foi atendido(a) para o email suporte.appportal@hc.fm.usp.br. Se possível, por favor, envie capturas de tela do problema também."
+        resposta: "<strong>R:</strong> Envie um email com a descrição do problema, nome completo, RGHC, CPF e último instituto em que foi atendido(a) para o email suporte.appportal@hc.fm.usp.br. Se possível, por favor, envie capturas de tela do problema também."
     },
 ];

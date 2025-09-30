@@ -5,7 +5,6 @@ type CardEspecialidadeProps = {
     card: TipoCardEspecialidade;
 }
 
-// Componente
 export default function CardEspecialidade({ card }: CardEspecialidadeProps) {
     return (
         <CardBase cssClass={`card-especialidades-medicas ${card.cssClass}`}>
